@@ -1,11 +1,12 @@
-# CSRO-Based Green PUF
+# CSRO-Based Green Physical Unclonable Function (PUF)
 
-A Current-Starved Ring Oscillator based Physical Unclonable Function for low-power IoT hardware authentication.
+A Current-Starved Ring Oscillator (CSRO)-Based Physical Unclonable Function for Low-Power IoT Hardware Authentication.
 
 ![Cadence](https://img.shields.io/badge/Tool-Cadence%20Virtuoso-blue)
 ![Spectre](https://img.shields.io/badge/Simulator-Spectre-purple)
 ![Verilog](https://img.shields.io/badge/HDL-Verilog-green)
 ![Project](https://img.shields.io/badge/Domain-Hardware%20Security-orange)
+> Developed as part of the **Samsung Chip Design Studio (IIIT Bangalore)** using Cadence Virtuoso, Spectre, and Verilog.
 
 ---
 
@@ -54,3 +55,97 @@ The main objectives of this project were:
 | RTL Design | Verilog |
 | RTL Simulation | Vivado / NCLaunch |
 | Documentation | GitHub Markdown, PowerPoint |
+
+---
+
+# Architecture
+
+The CSRO-based PUF follows a challenge-response architecture in which a pair of Current-Starved Ring Oscillators are selected using a challenge input. The oscillation frequencies are measured over a fixed time interval and compared to generate a unique response bit.
+
+![Architecture](Images/Architecture.png)
+
+The complete flow is illustrated below:
+
+```text
+Challenge
+      ↓
+MUX
+      ↓
+Selected CSRO Pair
+      ↓
+Counters
+      ↓
+Comparator
+      ↓
+Response Bit
+
+---
+
+# Design Flow
+
+```md
+---
+
+# Design Flow
+
+The project was developed incrementally, beginning with basic CMOS inverter characterization before progressing toward a complete CSRO-based PUF architecture.
+
+```text
+CMOS Inverter Design
+        ↓
+Current-Starved Inverter
+        ↓
+Normal Ring Oscillator
+        ↓
+Current-Starved Ring Oscillator
+        ↓
+Current Characterisation
+        ↓
+Temperature Sweep Analysis
+        ↓
+RTL Behavioural Modelling
+        ↓
+Challenge-Response Verification
+
+---
+
+# Repository Structure
+
+```md
+---
+
+# Repository Structure
+
+```text
+CSRO-Based-Green-PUF
+│
+├── Cadence
+├── RTL
+├── Simulation
+├── Images
+├── docs
+├── README.md
+└── LICENSE
+
+---
+
+# My Contributions
+
+This is one of my favorite sections because it shows honesty.
+
+```md
+---
+
+# My Contributions
+
+| Activity | Contribution |
+|-----------|--------------|
+| Literature Review | Team |
+| CSRO Architecture | Team |
+| RTL Behavioural Model | Primary Contribution |
+| Challenge-Response Verification | Primary Contribution |
+| Temperature Sweep Analysis | Primary Contribution |
+| Device Characterisation | Collaborative |
+| Technical Documentation | Primary Contribution |
+| Final Presentation | Team |
+
