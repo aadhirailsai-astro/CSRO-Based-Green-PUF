@@ -1,15 +1,10 @@
 `timescale 1ns / 1ps
-
 // -----------------------------------------------------------------------------
-// File        : csro_puf_model.v
-// Project     : CSRO-Based Green PUF
-// Description : Behavioural Verilog model of a CSRO-based RO-PUF.
-//
-// Note:
-// This model is intended for simulation-based challenge-response verification.
-// The delay statements (#STAGE_DELAY) are used to emulate oscillator frequency
-// differences caused by process variation. This is not intended as synthesizable
-// FPGA/ASIC RTL.
+// Four behavioural CSRO instances.
+// Slight delay variations are intentionally introduced to emulate
+// process-induced frequency mismatch observed in fabricated ring oscillators.
+// The selected delay values (~±2%) are based on representative values reported
+// in literature and are used only for behavioural verification.
 // -----------------------------------------------------------------------------
 
 // Behavioural 5-stage current-starved ring oscillator model
