@@ -122,7 +122,7 @@ Five current-starved inverter stages were connected in a feedback loop to genera
 
 Since transistor-level manufacturing variations cannot be represented directly in synthesizable RTL, a behavioural Verilog model was developed to emulate oscillator frequency differences.
 
-Representative delay variations (approximately ±2%) were introduced using parameterized propagation delays based on values commonly reported in the literature. This enabled functional verification of the challenge-response mechanism before hardware implementation.
+Representative delay variations were introduced using parameterized propagation delays to emulate the effect of process-induced frequency mismatch during behavioural verification.
 
 The behavioural model includes:
 
@@ -246,20 +246,6 @@ CSRO-Based-Green-PUF
 ├── Simulation
 └── Images
 ```
-
----
-
-# References
-
-1. Gassend et al., *Silicon Physical Random Functions*, ACM CCS, 2002.
-
-2. Suh and Devadas, *Physical Unclonable Functions for Device Authentication and Secret Key Generation*, DAC, 2007.
-
-3. Samsung Chip Design Studio, IIIT Bangalore (Project Material).
-
-4. Cadence Virtuoso and Spectre Documentation.
-
----
 
 # Acknowledgements
 
