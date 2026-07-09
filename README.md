@@ -77,7 +77,7 @@ Since the oscillation frequency depends on intrinsic transistor delay variations
 Rather than directly implementing the complete PUF, the design was developed incrementally. Each circuit block was independently designed, verified, and characterized before integrating it into the complete architecture.
 
 <p align="center">
-<img src="Images/design_Flow.png" width="450">
+<img src="Images/design_flow.png" width="450">
 </p>
 
 The development flow consisted of:
